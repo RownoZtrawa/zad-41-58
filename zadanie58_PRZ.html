@@ -1,0 +1,32 @@
+<html>
+<body style="background:linear-gradient(#E5536A,#F68F69);">
+<div style="color:red;font-size:18px;">
+<script language="JavaScript">
+var x=prompt("Podaj liczbę 1=","");
+var Liczba1_PRZ=parseInt(x);
+var y=prompt("Podaj liczbę 2=","");
+var Liczba2_PRZ=parseInt(y);
+if(Liczba1_PRZ < Liczba2_PRZ){
+for(i=Liczba1_PRZ;i<=Liczba2_PRZ;i++){
+if(i%2==1){
+document.write("<p style=\"font-size:50px; color: green;\"><br>"+i+"<br></p>");
+}
+}
+}
+if(Liczba1_PRZ > Liczba2_PRZ){
+for(i=Liczba1_PRZ;i>=Liczba2_PRZ;i--){
+if(i%2==1){
+document.write("<p style=\"font-size:25px; color: blue;\"><br>"+i+"<br></p>");
+}
+}
+}
+
+if(Liczba1_fli==Liczba2_PRZ){
+confirm("Brak obliczeń");
+document.write("Uruchom zadanie ponownie")
+}
+
+</script>
+</div>
+</body>
+</html>

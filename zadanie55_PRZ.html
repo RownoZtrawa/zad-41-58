@@ -1,0 +1,49 @@
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title> Przykłąd użycia pętli </title>
+ <script language="JavaScript">
+do{
+var x=prompt("podaj liczbe 1=","");
+var l1_t_PRZ=parseFloat(x);
+if(l1_t_PRZ>60 || l1_t_PRZ<20){
+alert("Liczba 1 nie należy do przedziału <20,60>");}
+}while(l1_t_PRZ>60 || l1_t_PRZ<20);
+do{
+var y=prompt("podaj liczbe 2=","");
+var l2_t_PRZ=parseFloat(x);
+if(l2_t_PRZ>60 || l2_t_PRZ<20){
+alert("Liczba 2 nie należy do przedziału <20,60>");}
+}while(l2_t_PRZ>60 || l2_t_PRZ<20);
+do{
+var z=prompt("podaj wielkość początkową tekstu=","");
+var pocz_fli=parseFloat(z);
+if(pocz_PRZ<0){
+alert("liczba początkowa nie moze być mniejsza niz 0");}
+}while(pocz_PRZ<0);
+var tekst_PRZ=prompt("podaj tekst=","");
+var i=pocz_PRZ
+if(l1_t_PRZ>l2_t_PRZ)
+{
+for(i; i<=100; i=i+5)
+{
+document.write("<p style=\"font-size:"+i+"px; color:black;\"><br>"+tekst_PRZ+"<br></p>");
+}
+}
+if(l1_t_PRZ==l2_t_PRZ)
+{
+document.write("<p style=\"font-size:"+pocz_PRZ+"px; color:black;\"><br>"+tekst_PRZ+"<br></p>");
+}
+
+if(l1_t_PRZ<l2_t_PRZ)
+{
+for(i; i<=100; i=i-5)
+{
+document.write("<p style=\"font-size:"+i+"px; color:black;\"><br>"+tekst_PRZ+"<br></p>");
+}
+}
+</script>
+</head>
+<body style="background:linear-gradient(#5C9FD3,#BD8BCA);">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 53</title>
+</head>
+ <div style="color:green;;font-size:56px;">
+<body style="background:linear-gradient(#D3E37C,silver,#D3E37C);"> 
+    <script>
+var liczba1 = prompt("Podaj liczbe numer 1");
+        var liczba2 = prompt("Podaj liczbe numer 2");
+        var a_PRZ = (liczba1 % 8) + 5;
+        var b_PRZ = (liczba2 % 5) + 20;
+         document.write(a_PRZ); 
+		    document.write("<br>");
+		 document.write(b_PRZ); 
+		 		    document.write("<br>");
+        for (var i = 0; i < b_PRZ + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for (var i = 0; i < a_PRZ; i++) {
+            document.write("*");
+            for (var j = 0; j < b_PRZ; j++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            document.write("*<br>");
+        }
+
+        for (var i = 0; i < b_PRZ + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+    </script>
+</body>
+</html>
